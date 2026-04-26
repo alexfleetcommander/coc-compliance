@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "coc-compliance"
-version = "1.0.0"
+version = "1.0.1"
 description = "Auto-detect your agent setup and configure Chain of Consciousness compliance logging"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -23,10 +23,13 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+[tool.setuptools.packages.find]
+include = ["coc_compliance*"]
+
 [project.scripts]
 coc-compliance = "coc_compliance.cli:main"
 
 [project.urls]
 Homepage = "https://vibeagentmaking.com/compliance"
-Documentation = "https://vibeagentmaking.com/docs/compliance"
-Repository = "https://github.com/vibeagentmaking/coc-compliance"
+Repository = "https://github.com/alexfleetcommander/coc-compliance"
+Issues = "https://github.com/alexfleetcommander/coc-compliance/issues"
